@@ -73,6 +73,7 @@ public class Calculator {
                     longest = arrWords[n-1];
                 }
                 System.out.println("самое длинное слово:\n"+longest);
+                break;
             }
             //Поиск самого длинного слова - конец программы
 
