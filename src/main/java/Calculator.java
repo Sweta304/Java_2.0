@@ -42,7 +42,7 @@ public class Calculator {
             //Калькулятор - конец программы
 
             //Поиск самого длинного слова - начало программы
-        } else if (choose==2){
+        } else if (choose==2) {
             System.out.print("введите кол-во слов: ");
             int wordsQty = scanner.nextInt();
             scanner.nextLine();
@@ -55,6 +55,7 @@ public class Calculator {
                 word = scanner.nextLine();
                 arrWords[i] = word;
             }
+
 
             //создаем и заполняем массив длинами слов
             int[] k = new int[wordsQty];
@@ -70,11 +71,12 @@ public class Calculator {
                 if (flag) {
                     longest = arrWords[n];
                 } else {
-                    longest = arrWords[n-1];
+                    longest = arrWords[n - 1];
                 }
-                System.out.println("самое длинное слово:\n"+longest);
-                break;
             }
+                System.out.println("самое длинное слово:\n" + longest);
+
+
             //Поиск самого длинного слова - конец программы
 
         } else {
