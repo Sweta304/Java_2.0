@@ -3,6 +3,8 @@
 
 package calculatorOop;
 
+import java.util.InputMismatchException;
+
 public class CalcOop {
 
         private double a;
@@ -16,13 +18,42 @@ public class CalcOop {
         public double addition () {
             return a+b;
         }
-        public double substraction () {
+        public double subtraction() {
             return a-b;
         }
         public double multiplication () {
             return a*b;
         }
         public double division () {
-            return a/b;
+            if(b==0){
+                throw new ArithmeticException();
+            } else {
+                return a/b;
+            }
+
+//            } catch (
+//                    ArithmeticException e) {
+//                System.out.println("Деление на ноль запрещено");
+//            } catch (
+//                    InputMismatchException e) {
+//                System.out.println("Введите число!");
+//            }
         }
+
+
+    public double getA(double a) {
+        return a;
+    }
+
+    public double getB(double b) {
+        return b;
+    }
+
+    public void setA(double a) {
+        this.a = a;
+    }
+
+    public void setB(double b) {
+        this.b = b;
+    }
 }
